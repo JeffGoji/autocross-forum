@@ -9,12 +9,11 @@ const Header = () => {
     Auth.logout();
   };
 
-
   return (
-    <header className="bg-secondary mb-4 py-2 flex-row align-center">
-      <div className="container flex-row justify-space-between-lg justify-center align-center">
+    <header className="mb-4 py-2 flex-row align-center orange-text">
+      <div className="container flex-row justify-space-between-lg justify-center align-center orange-text">
         <Link to="/">
-          <h1>Deep Thoughts</h1>
+          <h1>The Autocross Blog</h1>
         </Link>
 
         <nav className="text-center">

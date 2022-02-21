@@ -41,6 +41,7 @@ const Signup = () => {
           <h4 className='card-header'>Sign Up</h4>
           <div className='card-body'>
             <form onSubmit={handleFormSubmit}>
+              <label>Enter a Username</label>
               <input
                 className='form-input'
                 placeholder='Your username'
@@ -50,6 +51,7 @@ const Signup = () => {
                 value={formState.username}
                 onChange={handleChange}
               />
+              <label>Enter your Email</label>
               <input
                 className='form-input'
                 placeholder='Your email'
@@ -59,6 +61,7 @@ const Signup = () => {
                 value={formState.email}
                 onChange={handleChange}
               />
+              <label>Enter a password</label>
               <input
                 className='form-input'
                 placeholder='******'

@@ -47,6 +47,7 @@ const Login = (props) => {
           <h4 className='card-header'>Login</h4>
           <div className='card-body'>
             <form onSubmit={handleFormSubmit}>
+              <label>Your Email</label>
               <input
                 className='form-input'
                 placeholder='Your email'
@@ -56,6 +57,7 @@ const Login = (props) => {
                 value={formState.email}
                 onChange={handleChange}
               />
+              <label>Your Password</label>
               <input
                 className='form-input'
                 placeholder='******'

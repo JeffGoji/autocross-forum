@@ -3,12 +3,12 @@ import { Link } from 'react-router-dom';
 
 const ThoughtList = ({ thoughts, title }) => {
     if (!thoughts.length) {
-        return <h3>No Thoughts Yet</h3>;
+        return <h3>No Post Yet</h3>;
     }
 
     return (
         <div>
-            <h3>{title}</h3>
+            <h3 className="orange-text">{title}</h3>
             {thoughts &&
                 thoughts.map(thought => (
                     <div key={thought._id} className="card mb-3">
